@@ -1,0 +1,82 @@
+body{
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: fixed;
+    background-repeat:fixed;
+    font-family: Arial, sans-serif;
+}
+h1{
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+size-adjust: 50px;
+}
+p{
+    font-size: 20px;
+    color: white;
+}
+.grid-container {
+  display: grid;
+  /* Create 3 columns of equal width */
+  grid-template-columns: repeat(1, 1fr); 
+  /* Space between the items */
+  gap: 10px; 
+}
+
+.item {
+
+  color: white;
+  padding: 20px;
+  text-align: center;
+  :hover {
+    background-color: orange;
+  }
+}body {
+    margin: 0;
+    padding: 0;
+    color: white; /* Keeps your text white */
+    position: relative;
+    min-height: 100vh;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    /* Replace with your image name */
+    background-image: url('background.jpg'); 
+    background-size: cover;
+    background-position: non;
+    
+    /* THE BLUR SPEED AND STRENGTH */
+    filter: blur(4px); 
+    
+    /* Puts the blur behind everything else */
+    z-index: -3; 
+    
+    /* Optional: Makes the image slightly darker so text stands out */
+    brightness(-200%);
+}
+
+button1 {
+    background-color: rgb(236, 7, 7);
+    color: white;
+    border:none;
+    padding: 10px 20px;
+    text-align:right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 20px;
+    cursor: pointer;
+    border-radius: 13px;
+    size: 20px*30PX;
+}
+form {
+    text-align: center;
+    size: 20opx*30PX;
+    color: white;
+}
